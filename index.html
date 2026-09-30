@@ -1,0 +1,229 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geprek Bu Tati</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        body {
+            background: #fff8ed;
+            color: #3d2415;
+        }
+
+        header {
+            background: #f28c28;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-weight: bold;
+        }
+
+        .hero {
+            min-height: 85vh;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 50px 8%;
+            gap: 30px;
+        }
+
+        .hero-text {
+            max-width: 550px;
+        }
+
+        .hero-text h1 {
+            font-size: 55px;
+            color: #d35400;
+            margin-bottom: 15px;
+        }
+
+        .hero-text p {
+            font-size: 19px;
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #e85d04;
+            color: white;
+            padding: 13px 25px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .hero-img {
+            width: 380px;
+            height: 380px;
+            border-radius: 50%;
+            background: #ffd166;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 100px;
+            box-shadow: 0 10px 30px #0002;
+        }
+
+        .menu {
+            padding: 60px 8%;
+            text-align: center;
+            background: #fff;
+        }
+
+        .menu h2 {
+            font-size: 35px;
+            color: #d35400;
+            margin-bottom: 30px;
+        }
+
+        .cards {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background: #fff8ed;
+            width: 230px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px #0002;
+        }
+
+        .card .icon {
+            font-size: 55px;
+        }
+
+        .card h3 {
+            margin: 10px 0;
+        }
+
+        .price {
+            color: #e85d04;
+            font-weight: bold;
+            font-size: 20px;
+        }
+
+        footer {
+            text-align: center;
+            background: #3d2415;
+            color: white;
+            padding: 25px;
+        }
+
+        @media (max-width: 700px) {
+            .hero {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .hero-text h1 {
+                font-size: 42px;
+            }
+
+            .hero-img {
+                width: 280px;
+                height: 280px;
+            }
+
+            nav {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="logo">🌶️ Geprek Bu Tati</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#menu">Menu</a>
+            <a href="#kontak">Kontak</a>
+        </nav>
+    </header>
+
+    <section class="hero" id="home">
+        <div class="hero-text">
+            <h1>Geprek Bu Tati</h1>
+            <p>
+                Geprek renyah dengan isian gurih dan lezat.
+                Dibuat dengan bahan pilihan dan rasa khas
+                yang bikin ketagihan!
+            </p>
+
+            <a href="#menu" class="btn">Lihat Menu</a>
+        </div>
+
+        <div class="hero-img">
+            🍗
+        </div>
+    </section>
+
+    <section class="menu" id="menu">
+        <h2>Menu Favorit</h2>
+
+        <div class="cards">
+
+            <div class="card">
+                <div class="icon">🍗</div>
+                <h3>Geprek Original</h3>
+                <p>Geprek renyah dengan isian sayur.</p>
+                <br>
+                <div class="price">Rp10.000</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">🌶️</div>
+                <h3>Geprek Pedas</h3>
+                <p>Gurih, renyah, dengan rasa pedas.</p>
+                <br>
+                <div class="price">Rp12.000</div>
+            </div>
+
+            <div class="card">
+                <div class="icon">🔥</div>
+                <h3>Paket Geprek</h3>
+                <p>Cocok untuk dimakan bersama teman.</p>
+                <br>
+                <div class="price">Rp20.000</div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer id="kontak">
+        <p>📍 Geprek Bu Tati</p>
+        <p>Enak, renyah, dan bikin nagih!</p>
+        <br>
+        <p>© 2026 Geprek Bu Tati</p>
+    </footer>
+
+</body>
+</html>
